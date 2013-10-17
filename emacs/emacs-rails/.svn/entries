@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="232"
+   name=""
+   committed-date="2008-08-01T22:42:31.888513Z"
+   url="svn://rubyforge.org/var/svn/emacs-rails/trunk"
+   last-author="dimaexe"
+   kind="dir"
+   uuid="cc5033d0-740f-0410-afc7-949910e492f2"
+   prop-time="2009-12-14T22:40:46.000000Z"
+   revision="232"/>
+<entry
+   committed-rev="232"
+   name="rails-bytecompile.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="89acc0034d2827aaec49cbc0d5a5afae"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-features.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="d016e9c75d3f8aeea5f978384e93fc44"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-speedbar-feature.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="f0971611e0bf6cf80b4d4179356d18ef"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-test.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="ccf42308f4290a91e5c887cb84371897"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-log.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="9753507510066d9775b37b564ede0f7b"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-rake.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="97a52e272b84399aaabe703df468ac65"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-compat.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="fd92faa745eb69a5dcb07a6e615134f2"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-controller-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="0f6f791b038714b234aead6be21d7064"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-core.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="c7b2052c28dadd82323be675f94c7b16"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="History"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="e14aa2f362535199db85e9056ca6b47c"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-migration-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="2406300809ecb99408c5a77a648ff1f2"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-snippets-feature.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="24a173f9657ad951c4d9fb795906c307"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-controller-layout.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="c08fc2ed67f91a17c20b063944d6bbaf"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-navigation.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="a7e4c6fc54d5af885c1f3a9d3364e0f7"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-unit-test-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="5b7117cf7a4c0506bf4b5e204dd0f8e3"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-plugin-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="5cfc55fe4e4e089f25b27921c0a377af"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-model-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="f40f8925c4472b1177cd52d8dfa52a3b"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-rspec-feature.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="792c800585737afe1b5d360de6280f22"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-project.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="767da91179b62d0abd8e9045a0eb7c0a"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-lib.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="a6354de8ed6ed2e57fc8da78f3296911"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="Makefile"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="dab83482ec2c71377cbf5123792f47fb"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:45.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-model-layout.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="16168bf215bc4280283052f59b9ca884"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-mailer-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="43744fbdd30dc3bd1dabc6c3a32f31a9"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="predictive-prog-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="5456931a84bf4df089965504945ae984"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-ui.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="bfc780ec3e68aea14186e99c78ccee59"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-view-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="ec42613c4f153c903d008e19f43d80c7"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="ChangeLog"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="1aa3888adeee997e6cdfe6a7d8f94757"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-find.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="c5c658748dd2ea174ee74b6cac56fd27"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-ruby.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="8982fd7818e34cde11da64a0cfc0b205"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-layout-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="e6022a9ae89560efcfb943727658aa54"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-cmd-proxy.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="046a63af5d98771235ed6278a1e94f6c"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-helper-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="a306b8a8029136a80da66d10246f8b10"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-functional-test-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="ebc8f72eed25bd5892063006f6132fec"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="README"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="99ba2c62118944609e8e0af5ad280e87"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-scripts.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="3fcafb919f85ad3df369edbf9a442f69"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-ws.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="6399091a4fc366a6f08a3f4af29327e7"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-fixture-minor-mode.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="e71af8c0d4ea797c3e090fe407c3eaa7"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails-spec.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="c86444a2e63e9403c7b43b75d2a5f5d4"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="rails.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="0fbbe574f7c7faf26a1594803d6b93d5"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+<entry
+   committed-rev="232"
+   name="inflections.el"
+   text-time="2009-12-14T22:40:46.000000Z"
+   committed-date="2008-08-01T22:42:31.888513Z"
+   checksum="6a7f8ab7d42b208b1c80773051afc2a5"
+   last-author="dimaexe"
+   kind="file"
+   prop-time="2009-12-14T22:40:46.000000Z"/>
+</wc-entries>

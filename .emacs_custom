@@ -1,0 +1,126 @@
+;; Editing Settings
+;; ================
+
+(require 'cc-mode)
+
+(custom-set-variables
+ '(load-home-init-file t t)
+ '(gutter-buffers-tab-visible-p nil)
+ '(font-lock-maximum-decoration t)
+ '(toolbar-visible-p nil)
+ '(add-log-time-format (quote current-time-string))
+ '(modeline-3d-p t)
+ '(user-mail-address "thomas@upthere.com")
+ '(query-user-mail-address nil)
+ '(c-basic-offset 4)
+ '(cperl-indent-level 4)
+ '(ruby-indent-level 2)
+ '(font-lock-mode t nil (font-lock)))
+
+(setq auto-mode-alist (cons (cons "\\.def$" 'c-mode) auto-mode-alist)) 
+(setq auto-mode-alist (cons (cons "\\.bd$" 'c-mode) auto-mode-alist)) 
+(setq-default fill-column 75)
+;; (paren-set-mode 'sexp)4
+(c-set-offset 'substatement-open 0)
+(setq indent-tabs-mode nil)
+(setq default-tab-width 8)
+(setq-default indent-tabs-mode nil)
+(line-number-mode 1)
+(column-number-mode 1)
+(setq scroll-step 1)
+(setq scroll-conservatively 5)
+;; (tool-bar-mode 0)
+;; (setq scroll-bar-mode-explicit t)
+;; (setq scroll-bar-mode 0)
+;; (toggle-scroll-bar -1)
+(setq inhibit-splash-screen t)
+
+(autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t) 
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
+(custom-set-faces
+ '(default ((t (:stipple nil :background "gray85" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "b&h" :family "Courier"))))
+ '(font-lock-variable-name-face ((((class color) (background light)) (:foreground "blue3"))))
+ '(font-lock-keyword-face ((((class color) (background light)) (:foreground "orange"))))
+ '(font-lock-comment-face ((((class color) (background light)) (:foreground "red"))))
+ '(font-lock-function-name-face ((((class color) (background light)) (:foreground "blue3")))))
+
+(if (eq system-type 'windows-nt)
+    (custom-set-faces
+     '(default ((t (:stipple nil :background "gray85" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 98 :width normal :foundry "outline" :family "Consolas"))))))
+
+(if (file-exists-p "~/env/emacs/flyspell.el")
+    (load-file "~/env/emacs/flyspell.el")
+    (add-hook 'c-mode-common-hook 'flyspell-prog-mode))
+
+; Add cmake listfile names to the mode list.
+(setq auto-mode-alist
+	  (append
+	   '(("CMakeLists\\.txt\\'" . cmake-mode))
+	   '(("\\.cmake\\'" . cmake-mode))
+	   auto-mode-alist))
+
+(autoload 'cmake-mode "cmake-mode.el" t)
+
+(defun set-frame-size-according-to-resolution ()
+  (interactive)
+  (if window-system
+  (progn
+    ;; use 120 char wide window for largeish displays
+    ;; and smaller 80 column windows for smaller displays
+    ;; pick whatever numbers make sense for you
+    (if (> (x-display-pixel-width) 1280)
+           (add-to-list 'default-frame-alist (cons 'width 80))
+           (add-to-list 'default-frame-alist (cons 'width 80)))
+    ;; for the height, subtract a couple hundred pixels
+    ;; from the screen height (for panels, menubars and
+    ;; whatnot), then divide by the height of a char to
+    ;; get the height we want
+    (add-to-list 'default-frame-alist 
+         (cons 'height (/ (- (x-display-pixel-height) 200)
+                             (frame-char-height)))))))
+
+(set-frame-size-according-to-resolution)
+
+
+
+;; KEYBOARD BINDS
+;; ==============
+
+(global-set-key "\C-g"       'goto-line)
+;; (global-set-key "\C-xb"      'bs-select-buffer)
+(global-set-key [(control return)]  'dabbrev-expand)
+
+(global-set-key "\C-u"       'undo)
+(global-set-key "\C-s"       'isearch-forward)
+(global-set-key "\M-s"       'query-replace)
+
+(global-set-key [f3]         'find-tag)
+(global-set-key [f4]         'tags-loop-continue)
+(global-set-key "\C-xp"      'pop-tag-mark)
+
+
+;; Custom Functions
+;; ================
+
+(setq load-path
+     (append load-path
+      (list (expand-file-name "~/env/emacs")))) 
+
+
+;; Ruby Rails
+;; ==========
+
+(setq load-path (cons "~/env/emacs/emacs-rails" load-path))
+(require 'ruby-mode)
+(require 'rails)
+
+(load "cycle-buffer")
+(global-set-key [f9] 'cycle-buffer-backward)
+(global-set-key [f10] 'cycle-buffer)
+
+;; (load "buffer-select")
+;; (setq minibuffer-max-depth nil)
+
+
+
