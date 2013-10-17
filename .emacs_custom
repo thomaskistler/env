@@ -20,10 +20,10 @@
 (setq auto-mode-alist (cons (cons "\\.def$" 'c-mode) auto-mode-alist)) 
 (setq auto-mode-alist (cons (cons "\\.bd$" 'c-mode) auto-mode-alist)) 
 (setq-default fill-column 75)
-;; (paren-set-mode 'sexp)4
+;; (paren-set-mode 'sexp)
 (c-set-offset 'substatement-open 0)
 (setq indent-tabs-mode nil)
-(setq default-tab-width 8)
+(setq default-tab-width 4)
 (setq-default indent-tabs-mode nil)
 (line-number-mode 1)
 (column-number-mode 1)
@@ -114,6 +114,14 @@
 (setq load-path (cons "~/env/emacs/emacs-rails" load-path))
 (require 'ruby-mode)
 (require 'rails)
+
+;; Go
+;; ==
+
+(setq load-path (cons "~/env/" load-path))
+(require 'go-mode-load)
+
+
 
 (load "cycle-buffer")
 (global-set-key [f9] 'cycle-buffer-backward)

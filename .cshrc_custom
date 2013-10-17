@@ -11,12 +11,17 @@ alias rfind 'find . -name'
 alias rgrep 'grep -r --color {\!*} *'
 alias rm 'rm -i'
 alias xterm 'xterm -rightbar -xb -sl 50000 -bg gray85'
-alias ls 'ls -G'
+alias ls 'ls -G --color'
 alias indent 'indent -ncs -npcs -nprs -saf -sai -saw -ss -bad -bap -blf -bl -bls -nce -ncdw -bli0 -i4 -cli0 -ci4 -ip4 -di16 -ppi4 -nut -l79 -nsob -nbc -hnl -bbo -lp -nfca -nfc1 -d0 -c33 -cd33 -cp33 -ncdb -nsc'
+
+########################################
+# SHELL SETTINGS
+########################################
 
 set autoexpand = 1
 set histdup = prev
 bindkey ^r i-search-back
+set prompt='%m:%/%# '
 
 ########################################
 # CUSTOM ENV VARIABLES
