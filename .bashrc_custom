@@ -2,7 +2,7 @@
 # CUSTOM ALIASES
 ########################################
 
-if uname | grep "Darwin"; then
+if uname | grep "Darwin" &> /dev/null; then
    alias em='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --no-splash'
    alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -geometry 80x55 -no-splash'
    alias ls='ls -G'
