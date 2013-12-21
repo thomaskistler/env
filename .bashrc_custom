@@ -10,6 +10,7 @@ else
    alias em='emacs -nw --no-splash'
    alias emacs='emacs -bg gray85 -geometry 80x55 -no-splash'
    alias ls='ls --color'
+   export NO_AT_BRIDGE=1
 fi
 alias cp='cp -i'
 alias more='less -c -X'

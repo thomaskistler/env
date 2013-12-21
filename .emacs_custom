@@ -45,6 +45,13 @@
 ;;  '(font-lock-comment-face ((((class color) (background light)) (:foreground "red"))))
 ;;  '(font-lock-function-name-face ((((class color) (background light)) (:foreground "blue3")))))
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Menlo" :foundry "bitstream" :slant normal :weight normal :height 83 :width normal)))))
+
 (if (eq system-type 'windows-nt)
     (custom-set-faces
      '(default ((t (:stipple nil :background "gray85" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 98 :width normal :foundry "outline" :family "Consolas"))))))
