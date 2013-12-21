@@ -2,17 +2,22 @@
 # CUSTOM ALIASES
 ########################################
 
+if uname | grep "Darwin"; then
+   alias em='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --no-splash'
+   alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -geometry 80x55 -no-splash'
+   alias ls='ls -G'
+else
+   alias em='emacs -nw --no-splash'
+   alias emacs='emacs -bg gray85 -geometry 80x55 -no-splash'
+   alias ls='ls --color'
+fi
 alias cp='cp -i'
-alias em='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --no-splash'
-#alias emacs='open -a /Applications/Emacs.app $1'
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -geometry 80x55 -no-splash'
 alias more='less -c -X'
 alias mv='mv -i'
 alias rfind='find . -name'
 alias rgrep='grep -r --color {\!*} *'
 alias rm='rm -i'
 alias xterm='xterm -rightbar -xb -sl 50000 -bg gray85'
-alias ls='ls -G'
 alias indent='indent -ncs -npcs -nprs -saf -sai -saw -ss -bad -bap -blf -bl -bls -nce -ncdw -bli0 -i4 -cli0 -ci4 -ip4 -di16 -ppi4 -nut -l79 -nsob -nbc -hnl -bbo -lp -nfca -nfc1 -d0 -c33 -cd33 -cp33 -ncdb -nsc'
 
 #set autoexpand = 1
