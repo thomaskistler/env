@@ -8,7 +8,6 @@
  '(gutter-buffers-tab-visible-p nil)
  '(font-lock-maximum-decoration t)
  '(toolbar-visible-p nil)
- '(add-log-time-format (quote current-time-string))
  '(modeline-3d-p t)
  '(user-mail-address "thomas@upthere.com")
  '(query-user-mail-address nil)
@@ -64,15 +63,6 @@
     (load-file "~/env/emacs/flyspell.el")
     (add-hook 'c-mode-common-hook 'flyspell-prog-mode))
 
-; Add cmake listfile names to the mode list.
-(setq auto-mode-alist
-	  (append
-	   '(("CMakeLists\\.txt\\'" . cmake-mode))
-	   '(("\\.cmake\\'" . cmake-mode))
-	   auto-mode-alist))
-
-(autoload 'cmake-mode "cmake-mode.el" t)
-
 (defun set-frame-size-according-to-resolution ()
   (interactive)
   (if window-system
@@ -92,6 +82,14 @@
                              (frame-char-height)))))))
 
 (set-frame-size-according-to-resolution)
+
+
+(load "cycle-buffer")
+(global-set-key [f9] 'cycle-buffer-backward)
+(global-set-key [f10] 'cycle-buffer)
+
+;; (load "buffer-select")
+;; (setq minibuffer-max-depth nil)
 
 
 
@@ -138,14 +136,17 @@
 (setq load-path (cons "~/env/" load-path))
 (require 'p4)
 
+;; CMAKE
+;; =====
 
+; Add cmake listfile names to the mode list.
+(setq auto-mode-alist
+	  (append
+	   '(("CMakeLists\\.txt\\'" . cmake-mode))
+	   '(("\\.cmake\\'" . cmake-mode))
+	   auto-mode-alist))
 
-(load "cycle-buffer")
-(global-set-key [f9] 'cycle-buffer-backward)
-(global-set-key [f10] 'cycle-buffer)
-
-;; (load "buffer-select")
-;; (setq minibuffer-max-depth nil)
+(autoload 'cmake-mode "cmake-mode.el" t)
 
 
 
