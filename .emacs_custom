@@ -84,15 +84,6 @@
 (set-frame-size-according-to-resolution)
 
 
-(load "cycle-buffer")
-(global-set-key [f9] 'cycle-buffer-backward)
-(global-set-key [f10] 'cycle-buffer)
-
-;; (load "buffer-select")
-;; (setq minibuffer-max-depth nil)
-
-
-
 ;; KEYBOARD BINDS
 ;; ==============
 
@@ -115,6 +106,14 @@
 (setq load-path
      (append load-path
       (list (expand-file-name "~/env/emacs")))) 
+
+(load "cycle-buffer")
+(global-set-key [f9] 'cycle-buffer-backward)
+(global-set-key [f10] 'cycle-buffer)
+
+;; (load "buffer-select")
+;; (setq minibuffer-max-depth nil)
+
 
 
 ;; Ruby Rails
