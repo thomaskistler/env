@@ -9,6 +9,7 @@
  '(font-lock-maximum-decoration t)
  '(toolbar-visible-p nil)
  '(modeline-3d-p t)
+ '(user-full-name "Thomas Kistler")
  '(user-mail-address "thomas@upthere.com")
  '(query-user-mail-address nil)
  '(c-basic-offset 4)
