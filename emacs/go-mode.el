@@ -460,7 +460,7 @@ recommended that you look at goflymake
   (imenu-add-to-menubar "Index")
 
   ;; Go style
-  (setq indent-tabs-mode t)
+  (setq indent-tabs-mode nil)
 
   ;; Handle unit test failure output in compilation-mode
   ;;

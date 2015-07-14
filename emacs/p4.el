@@ -2975,7 +2975,7 @@ NIL if there is no such completion type."
 (define-derived-mode p4-form-mode indented-text-mode "P4 Form"
   "Major mode for P4 form derived from `indented-text-mode'"
   (setq fill-column 80
-        indent-tabs-mode t
+        indent-tabs-mode nil
         font-lock-defaults '(p4-form-font-lock-keywords t)))
 
 

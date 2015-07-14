@@ -34,6 +34,8 @@ export TERM=xterm-256color
 export P4CONFIG=.p4config
 export P4PORT=perforce.corp.upthere.com:1666
 export EDITOR=emacs
+export TMPDIR=/disk/a/tmp
+export DONT_DUP=1
 
 ########################################
 # CUSTOM PATHS
