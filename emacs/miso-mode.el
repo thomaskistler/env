@@ -73,7 +73,7 @@
     (concat "\\_<" s "\\_>")))
 
 (defconst miso-dangling-operators-regexp "[^-]-\\|[^+]\\+\\|[/*&><.=|^]")
-(defconst miso-identifier-regexp "[[:word:][:multibyte:]]+")
+(defconst miso-identifier-regexp "[[:word:][:multibyte:]\?]+")
 (defconst miso-label-regexp miso-identifier-regexp)
 (defconst miso-type-regexp "[[:word:][:multibyte:]*]+")
 (defconst miso-func-regexp (concat (miso--regexp-enclose-in-symbol "func") "\\s *\\(" miso-identifier-regexp "\\)"))
@@ -83,7 +83,7 @@
   "All built-in functions in the Miso language. Used for font locking.")
 
 (defconst miso-mode-keywords
-  '("break"    "func"   "select"  "from"  "where"  "by"  "try"  "with"
+  '("break"    "func"   "select"  "from"  "where"  "by"  "try"  "with"  "defined?"
     "run"      "else"   "collection"   "if"    "continue"   "for"  "return")
   "All keywords in the Miso language.  Used for font locking.")
 

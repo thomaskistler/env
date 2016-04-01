@@ -46,4 +46,10 @@ export DONT_DUP=1
 PATH=/usr/local/Cellar/bash/4.2.45/bin:${PATH}
 
 # SSH keys
-eval $(keychain --eval -Q id_rsa)
+# eval $(keychain --eval -Q id_rsa)
+
+if [ ! -z "$SSH_AUTH_SOCK" -a "$SSH_AUTH_SOCK" != "$HOME/.ssh/agent_sock" ]; then
+  unlink "$HOME/.ssh/agent_sock" 2>/dev/null
+  ln -s "$SSH_AUTH_SOCK" "$HOME/.ssh/agent_sock"
+  export SSH_AUTH_SOCK="$HOME/.ssh/agent_sock"
+fi
