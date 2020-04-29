@@ -45,6 +45,10 @@ export DONT_DUP=1
 # path directories that contain spaces.
 PATH=/usr/local/Cellar/bash/4.2.45/bin:${PATH}
 
+if uname | grep "Darwin" &> /dev/null; then
+   PATH=/Users/tkistler/bin/remote/bin:${PATH}
+fi
+
 # SSH keys
 # eval $(keychain --eval -Q id_rsa)
 
