@@ -16,7 +16,8 @@ alias cp='cp -i'
 alias more='less -c -X'
 alias mv='mv -i'
 alias rfind='find . -name'
-alias rgrep='grep -r --color {\!*} *'
+function rgrep { grep -r --color "$1" *; }
+export -f rgrep
 alias rm='rm -i'
 alias xterm='xterm -rightbar -xb -sl 50000 -bg gray85'
 alias indent='indent -ncs -npcs -nprs -saf -sai -saw -ss -bad -bap -blf -bl -bls -nce -ncdw -bli0 -i4 -cli0 -ci4 -ip4 -di16 -ppi4 -nut -l79 -nsob -nbc -hnl -bbo -lp -nfca -nfc1 -d0 -c33 -cd33 -cp33 -ncdb -nsc'
@@ -34,8 +35,21 @@ export TERM=xterm-256color
 export P4CONFIG=.p4config
 export P4PORT=perforce.corp.upthere.com:1666
 export EDITOR=emacs
-export TMPDIR=/disk/a/tmp
 export DONT_DUP=1
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+########################################
+# PROMPT
+########################################
+function parse_git_dirty {
+  [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
+}
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
+}
+
+export PS1="\u@\h \[\033[32m\]\w\[\033[91m\]\$(parse_git_branch)\[\033[00m\] $ "
+
 
 ########################################
 # CUSTOM PATHS
@@ -57,3 +71,4 @@ if [ ! -z "$SSH_AUTH_SOCK" -a "$SSH_AUTH_SOCK" != "$HOME/.ssh/agent_sock" ]; the
   ln -s "$SSH_AUTH_SOCK" "$HOME/.ssh/agent_sock"
   export SSH_AUTH_SOCK="$HOME/.ssh/agent_sock"
 fi
+

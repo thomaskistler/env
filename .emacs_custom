@@ -46,18 +46,18 @@
 ;;  '(font-lock-function-name-face ((((class color) (background light)) (:foreground "blue3")))))
 
 ;; OS check
-(cond
-  ((string-equal system-type "gnu/linux")
-    (custom-set-faces
-      '(default ((t (:family "Meslo LG L DZ" :foundry "bitstream" :slant normal :weight normal :height 98 :width normal))))
-    )
-  )
-  ((t)  
-    (custom-set-faces
-      '(default ((t (:family "Menlo" :foundry "bitstream" :slant normal :weight normal :height 97 :width normal))))
-    )  
-  )
-)
+;; (cond
+;;   ((string-equal system-type "gnu/linux")
+;;     (custom-set-faces
+;;       '(default ((t (:family "Meslo LG L DZ" :foundry "bitstream" :slant normal :weight normal :height 98 :width normal))))
+;;     )
+;;   )
+;;   ((t)  
+;;     (custom-set-faces
+;;       '(default ((t (:family "Menlo" :foundry "bitstream" :slant normal :weight normal :height 97 :width normal))))
+;;     )  
+;;   )
+;; )
 
 
 (if (file-exists-p "~/env/emacs/flyspell.el")

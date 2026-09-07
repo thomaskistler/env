@@ -1,0 +1,24 @@
+#compdef kubectl
+ 
+_kubectl() { 
+    local curcontext="$curcontext" state line
+    typeset -A opt_args
+ 
+    _arguments \
+        '1:Application: '\
+        '2:Fabric:->fabric'\
+        '*: :->city'
+
+    echo "STATE $state"
+    case $state in
+    fabric)
+        _arguments '2:Fabric:(ei-ltx1 prod-ltx1)'
+    ;;
+    *)
+        echo "WORDS $words"
+        compadd "$@" foo bar
+
+    esac
+}
+
+_kubectl "$@"

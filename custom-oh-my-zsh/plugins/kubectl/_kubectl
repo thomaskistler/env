@@ -1,0 +1,30 @@
+#compdef kubectl
+ 
+_kubectl() { 
+    local curcontext="$curcontext" state line
+    typeset -A opt_args
+ 
+    _arguments \
+        '1:command:(exec pod)' \
+        '-f[fabric]:fabric:(ei-ltx1 prod-ltx1)' \
+        '-g[fabric group]:fabric group:(ei prod)' \
+        '-p[product]:product:->product' \
+        '-a[application]:application:->application'    
+
+    case "$state" in
+        product)
+            echo "line = $words ---"
+            if [[ "$words" =~ -a\ ([^\ ]+) ]]; then
+                echo "FOUND APPLICATION ${match[1]}"
+            fi
+            ;;
+        application)
+            echo "line = $words ---"
+            if [[ "$words" =~ -p\ ([^\ ]+) ]]; then
+                echo "FOUND PRODUCT ${match[1]}"
+            fi
+            ;;
+    esac
+}
+
+_kubectl "$@"
